@@ -16,6 +16,19 @@ class CuboidMaker{
         return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
     }
 }
+
+
+//Stretch Q
+class CubeMaker extends CuboidMaker{
+
+}
+
+
 var cuboid = new CuboidMaker(4, 5, 5);
+var cube = new CubeMaker(5, 5, 5);
+
 console.log(cuboid.surfaceArea()); // 130
 console.log(cuboid.volume()); // 100
+
+console.log(cube.surfaceArea()); // 130
+console.log(cube.volume()); // 100
